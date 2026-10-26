@@ -1,18 +1,18 @@
-# Bore DOPE
+BORE DOPE
 
-**Firearm, Suppressor, Maintenance, Range & DOPE Data Manager for Android**
+Firearm, Suppressor, Maintenance, Range, Reloading and DOPE Data Manager for Android
 
-Bore DOPE is an Android application for keeping firearm and suppressor records, tracking rounds fired and maintenance history, maintaining ammunition/load information, and creating editable DOPE cards for individual firearms and loads.
+Bore DOPE is a private Android application for managing firearm and suppressor records, tracking range activity and maintenance, recording ammunition and reloading information, and maintaining editable DOPE cards for individual firearms and loads.
 
-The goal is a simple, private, practical field and collection-management tool without requiring an online account or subscription.
+The goal is to provide a practical, organized field and collection-management tool without requiring an online account, subscription, or cloud service.
 
----
+======================================================================
+CORE FEATURES
+======================================================================
 
-## Features
+FIREARM INVENTORY
 
-### Firearm Inventory
-
-Store information for each firearm, including:
+Store and manage firearm information including:
 
 - Manufacturer
 - Model
@@ -22,97 +22,80 @@ Store information for each firearm, including:
 - Pickup date
 - Purchase price
 - Insurance/replacement value
-- New / Used / Not Set condition
+- New / Used / Not Set purchase condition
 - Notes
 - Favorite status
 - Sold/archive status
 
----
+SUPPRESSOR INVENTORY
 
-## Suppressor Inventory
+Maintain suppressor records separately while still tracking their use and total rounds fired.
 
-Maintain suppressor records separately while still tracking their use with compatible firearms.
+RANGE AND ACTIVITY HISTORY
 
-Records can include identifying information, purchase information, notes, rounds fired, and activity history.
+Each shooting session can be recorded as a separate activity entry.
 
----
-
-## Range & Activity History
-
-Log shooting sessions for individual firearms.
-
-Each activity entry can include:
+Activity records can include:
 
 - Date
 - Rounds fired
 - Notes
 
-Bore DOPE maintains a running round count while preserving the individual activity sessions that created that total.
+Bore DOPE maintains a running round count while preserving the individual sessions that produced that total.
 
-Tap a history entry to view or edit its details.
+History entries open in a read-only view first to help prevent accidental edits. An Edit button opens the editable version when changes are actually needed.
 
----
+CLEANING AND MAINTENANCE HISTORY
 
-## Cleaning & Maintenance History
+Cleaning is stored as individual dated records instead of only as a single counter.
 
-Cleaning is stored as individual dated records rather than just a single counter.
-
-Each cleaning entry can contain:
+Each cleaning record can include:
 
 - Date
 - Notes
 
-Bore DOPE keeps a running cleaning total while allowing each cleaning session to be opened and reviewed later.
+Bore DOPE maintains a running cleaning total and keeps the individual cleaning history available for review.
 
----
+DOPE CARDS
 
-## DOPE Cards
+Each firearm can have multiple DOPE cards for different ammunition, factory loads, or handloads.
 
-Each firearm can have multiple DOPE cards for different ammunition or handloads.
+A new DOPE card begins with one range row. Additional rows can be added as needed instead of filling the screen with unused distances.
 
-Each card can contain:
+DOPE card information can include:
 
 - Bullet
 - Load
-- MOA or MIL adjustment units
+- Load performance in MOA
+- Adjustment unit
 - Target name
 - Distance
 - Elevation adjustment
-- Wind adjustment
+- Windage adjustment
 
-Default distance rows include:
+MRAD is used for milliradian adjustments.
 
-- 100 yards
-- 200 yards
-- 300 yards
-- 400 yards
-- 600 yards
-- 700 yards
-- 800 yards
-- 900 yards
-- 1000 yards
+The DOPE system is designed as a user-entered reference system. Bore DOPE does not invent ballistic data or present automatically fabricated values as measured DOPE.
 
-The values are user-entered and editable.
+RELOADING AND LOAD DATA
 
-Bore DOPE does not fabricate ballistic data or pretend calculated information is measured DOPE.
-
----
-
-## Reloading & Load Data
-
-Each DOPE card can also maintain load-specific information such as:
+Each DOPE card can maintain its own load-specific information, including:
 
 - Bullet
 - Bullet weight
 - Powder
 - Powder charge
 - Primer
-- Brass
+- Brass / case
 - Cartridge overall length
-- Ballistic/reference information
+- Ballistic coefficient
+- G1 or G7 BC model
+- Load performance in MOA
 - Notes
 
-Chronograph information can also be stored:
+CHRONOGRAPH DATA
+
+Chronograph information can be stored with each load, including:
 
 - Average velocity
 - Standard deviation (SD)
@@ -123,9 +106,7 @@ Chronograph information can also be stored:
 
 Average velocity and SD are displayed directly on the DOPE card for quick reference.
 
----
-
-## Collection Summary
+COLLECTION SUMMARY
 
 Bore DOPE provides collection-wide totals including:
 
@@ -136,15 +117,15 @@ Bore DOPE provides collection-wide totals including:
 - Total cleanings
 - Total collection value
 
-For collection value, the app uses the insurance/replacement value when one has been entered and otherwise uses the purchase price.
+For collection value, Bore DOPE uses the insurance/replacement value when one has been entered. Otherwise, it falls back to the item's purchase price.
 
----
-
-## Backup & Restore
+======================================================================
+BACKUP AND RESTORE
+======================================================================
 
 Bore DOPE supports manual and automatic backups.
 
-The app keeps:
+The application keeps:
 
 - The latest 3 automatic backups
 - The latest 3 manual backups
@@ -156,39 +137,41 @@ Backup controls include:
 - Open Backup Folder
 - Restore Backup
 
-Backups include firearm, suppressor, history, DOPE-card, load, and chronograph information.
+Backups include firearm, suppressor, activity-history, cleaning-history, DOPE-card, load-data, and chronograph information.
 
----
+======================================================================
+DATA SAFETY
+======================================================================
 
-## Data Safety
-
-Bore DOPE uses an Android Room database and database migrations so application updates can preserve existing records.
+Bore DOPE uses an Android Room database with explicit database migrations so application updates can preserve existing information.
 
 The project is designed so normal upgrades do not require deleting the existing application or losing the user's collection data.
 
----
+Editing screens are designed to reduce accidental data loss. Important edit dialogs require an intentional Save, Cancel, or deliberate Android back action rather than disappearing from an accidental outside tap.
 
-## Privacy
+======================================================================
+PRIVACY
+======================================================================
 
 Bore DOPE is intended as a local record-keeping application.
 
-The project does not require users to create a Bore DOPE account to maintain their collection.
+It does not require a Bore DOPE account or subscription to maintain collection information.
 
-Users are responsible for protecting their phone and any exported backup files containing their personal records.
+Users are responsible for protecting their phone and any exported backup files containing personal records.
 
----
+======================================================================
+INSTALLATION
+======================================================================
 
-## Installation
+Download the current signed APK from the GitHub Releases section.
 
-Download the current signed APK from the GitHub **Releases** section.
+Android may require permission to install applications from the browser or file manager being used.
 
-On Android, installation from GitHub may require permission to install applications from the browser or file manager being used.
+Future Bore DOPE versions signed with the same release identity can install over earlier versions while preserving application data.
 
-Future versions signed with the same Bore DOPE release identity can install over earlier versions while preserving application data.
-
----
-
-## Building From Source
+======================================================================
+BUILDING FROM SOURCE
+======================================================================
 
 Bore DOPE is a native Android project.
 
@@ -198,64 +181,67 @@ On Windows:
 2. Open the project folder.
 3. Double-click:
 
-**BUILD RELEASE.bat**
+   BUILD RELEASE.bat
 
-The build system prepares or checks the required Android development tools, runs tests and lint checks, builds the signed APK and AAB, and packages the public release files.
+The build system checks or prepares the required Android development tools, runs tests and lint checks, builds the signed APK and AAB, and packages the public release files.
 
-Successful builds are placed in:
+Successful release files are placed in:
 
-**RELEASE**
+   RELEASE
 
-You should not normally need to manually configure Java, Gradle, Android SDK paths, or Android signing information.
+The developer should not normally need to manually configure Java, Gradle, Android SDK paths, or signing information.
 
----
+======================================================================
+BUILD DIAGNOSTICS
+======================================================================
 
-## Build Diagnostics
+Each build creates diagnostic information under:
 
-Each build also creates diagnostic information under:
+   BUILD_LOGS
 
-**BUILD_LOGS**
+If a build fails, a timestamped diagnostic ZIP is created containing useful build, Gradle, lint, test, environment, Room-schema, and configuration information.
 
-If a build fails, a timestamped diagnostic ZIP is created containing the useful build, Gradle, lint, test, environment, and database-schema logs.
+Private signing keys and passwords are excluded.
 
-Private signing keys and passwords are excluded from diagnostic packages.
+======================================================================
+RELEASE CONTENTS
+======================================================================
 
----
-
-## Release Files
-
-A completed release may include:
+A completed Bore DOPE release may include:
 
 - Signed Android APK
 - Google Play AAB
-- Source ZIP
+- Clean source ZIP
 - README
+- GitHub_README.txt
+- GitHub_README.html
 - CHANGELOG / UPDATES
 - Package/version information
 - SHA-256 hashes
+- Build diagnostics when applicable
 
----
+======================================================================
+DEVELOPMENT STATUS
+======================================================================
 
-## Development Status
+Bore DOPE is under active development and testing.
 
-Bore DOPE is currently under active development and testing.
+Early builds should be treated as development software. Back up important records before installing test versions.
 
-Early releases should be treated as development versions. Back up important records before installing test versions.
+Testing feedback and reproducible bug reports are welcome.
 
-Issues, testing feedback, and reproducible bug reports are welcome.
+======================================================================
+DISCLAIMER
+======================================================================
 
----
+Bore DOPE is an inventory, maintenance, range-log, reloading-data, chronograph-data, and user-entered DOPE reference application.
 
-## Disclaimer
-
-Bore DOPE is an inventory, maintenance, range-log, and user-entered reference-data application.
-
-Users are responsible for verifying all firearm, ammunition, reloading, ballistic, and DOPE information before relying on it.
+Users are responsible for verifying all firearm, ammunition, reloading, ballistic, chronograph, and DOPE information before relying on it.
 
 Bore DOPE does not replace manufacturer documentation, qualified professional instruction, established reloading manuals, or safe firearm-handling practices.
 
----
+======================================================================
+COPYRIGHT
+======================================================================
 
-## Copyright
-
-**Copyright NB7N - Beaner Industries in Association with Jack Ruby Productions**
+Copyright NB7N - Beaner Industries in Association with Jack Ruby Productions
