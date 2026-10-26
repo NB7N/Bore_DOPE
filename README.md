@@ -7,7 +7,9 @@ Bore DOPE is a private Android application for managing firearm and suppressor r
 The goal is to provide a practical, organized field and collection-management tool without requiring an online account, subscription, or cloud service.
 
 =======================================
+
 CORE FEATURES
+
 =======================================
 
 FIREARM INVENTORY
