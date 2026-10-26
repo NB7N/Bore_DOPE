@@ -122,7 +122,9 @@ Bore DOPE provides collection-wide totals including:
 For collection value, Bore DOPE uses the insurance/replacement value when one has been entered. Otherwise, it falls back to the item's purchase price.
 
 =======================================
+
 BACKUP AND RESTORE
+
 =======================================
 
 Bore DOPE supports manual and automatic backups.
@@ -142,7 +144,9 @@ Backup controls include:
 Backups include firearm, suppressor, activity-history, cleaning-history, DOPE-card, load-data, and chronograph information.
 
 =======================================
+
 DATA SAFETY
+
 =======================================
 
 Bore DOPE uses an Android Room database with explicit database migrations so application updates can preserve existing information.
@@ -152,7 +156,9 @@ The project is designed so normal upgrades do not require deleting the existing 
 Editing screens are designed to reduce accidental data loss. Important edit dialogs require an intentional Save, Cancel, or deliberate Android back action rather than disappearing from an accidental outside tap.
 
 =======================================
+
 PRIVACY
+
 =======================================
 
 Bore DOPE is intended as a local record-keeping application.
@@ -162,7 +168,9 @@ It does not require a Bore DOPE account or subscription to maintain collection i
 Users are responsible for protecting their phone and any exported backup files containing personal records.
 
 =======================================
+
 INSTALLATION
+
 =======================================
 
 Download the current signed APK from the GitHub Releases section.
@@ -172,7 +180,9 @@ Android may require permission to install applications from the browser or file 
 Future Bore DOPE versions signed with the same release identity can install over earlier versions while preserving application data.
 
 =======================================
+
 BUILDING FROM SOURCE
+
 =======================================
 
 Bore DOPE is a native Android project.
@@ -194,7 +204,9 @@ Successful release files are placed in:
 The developer should not normally need to manually configure Java, Gradle, Android SDK paths, or signing information.
 
 =======================================
+
 BUILD DIAGNOSTICS
+
 =======================================
 
 Each build creates diagnostic information under:
@@ -206,7 +218,9 @@ If a build fails, a timestamped diagnostic ZIP is created containing useful buil
 Private signing keys and passwords are excluded.
 
 =======================================
+
 RELEASE CONTENTS
+
 =======================================
 
 A completed Bore DOPE release may include:
@@ -223,7 +237,9 @@ A completed Bore DOPE release may include:
 - Build diagnostics when applicable
 
 =======================================
+
 DEVELOPMENT STATUS
+
 =======================================
 
 Bore DOPE is under active development and testing.
@@ -233,7 +249,9 @@ Early builds should be treated as development software. Back up important record
 Testing feedback and reproducible bug reports are welcome.
 
 =======================================
+
 DISCLAIMER
+
 =======================================
 
 Bore DOPE is an inventory, maintenance, range-log, reloading-data, chronograph-data, and user-entered DOPE reference application.
@@ -243,7 +261,9 @@ Users are responsible for verifying all firearm, ammunition, reloading, ballisti
 Bore DOPE does not replace manufacturer documentation, qualified professional instruction, established reloading manuals, or safe firearm-handling practices.
 
 =======================================
+
 COPYRIGHT
+
 =======================================
 
 Copyright NB7N - Beaner Industries in Association with Jack Ruby Productions
